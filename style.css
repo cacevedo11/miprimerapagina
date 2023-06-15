@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.container-img{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.container-img a img{
+    max-width:100%;
+}
+
+.logoB{
+    display: none;
+}
+
+.navBar-ul{
+    display: flex;
+    width: 50vw;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+}
+
+.navBar-ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.servicios{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+   
+}
+
+.servicios-up{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: 10px; 
+}
+
+.panel-btn{
+    display: none;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe{
+    width: 500px;
+    height: 300px;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    width: 100vw;
+    height: auto;
+    padding: 30px;
+    color: white;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.derechos{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .barra{
+        background-color: blue;
+    }
+
+    .barra ul li a{
+        color: black;
+    }
+
+
+    .panel-btn{
+        display: flex;
+        position: absolute;
+        height: 80px;
+        right: 0;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .navBar-ul{
+        display: none;
+    }
+
+    .navBar-ul.is-active{
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        height: 92vh;
+        transform: translateY(80px);
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .navBar-ul.is-active li:hover{
+        border-bottom: 5px solid aqua;
+       transition: 0.1s;
+    }
+
+ 
+}
